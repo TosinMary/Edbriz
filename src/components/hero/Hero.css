@@ -1,0 +1,155 @@
+.hero-container{
+    background-color: #00072d;
+    height: calc(100vh - 10rem);
+    width: 100%;
+    padding: 0 4rem;
+}
+.hero-intro{
+    color: white;
+    position: absolute;
+    bottom: -30rem;
+}
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 7rem;
+    margin: 0 auto;
+    width: 100%;
+}
+.hero-images img{
+    object-fit: cover;
+}
+span{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 10px 0;
+}
+.hero-target{
+    font-size: initial;
+    color: #fd5901;
+}
+.btn2{
+    border: 2px solid white;
+}
+.btn2:hover{
+    background-color: white;
+    color: #00072d;
+    border: none;
+}
+.hero-btn{
+    display: flex;
+    gap: 2rem;
+}
+.pic3{
+    position: absolute;
+    max-width: 200px;
+    height: 200px;
+    border: 5px solid #40525c;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 10rem;
+    right: 25rem;
+}
+.pic1{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border: 5px solid #40525c;
+    border-radius: 50%;
+    object-fit: cover;
+    bottom: -30rem;
+    right: 4rem;
+}
+.pic4{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 5px solid #40525c;
+    border-radius: 50%;
+    object-fit: cover;
+    right: 20rem;
+    bottom: -11rem;
+}
+.pic2{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 5px solid #40525c;
+    border-radius: 50%;
+    object-fit: cover;
+    bottom: -32rem;
+    right: 24rem;
+    transform: rotate(-3deg);
+}
+@media screen and (max-width: 430px){
+    .hero-intro{
+        text-align: center;
+        bottom: -46rem;
+    }
+    .hero-container{
+        padding: 0 2rem;
+    }
+    .pic1{
+        width: 210px;
+        height: 210px;
+        bottom: -29rem;
+        right: 4.5rem;
+        border: none;
+        z-index: 1;
+    }
+    .pic2{
+        width: 220px;
+        height: 220px;
+        bottom: -16rem;
+        border: none;
+        right: 4rem;
+        transform: rotate(-5deg);
+        z-index: 2;
+    }
+    .pic3{
+        max-width: 120px;
+        height: 120px;
+        top: 12rem;
+       left: 1rem;
+       border: none;
+        transform: rotate(-17deg);
+    }
+    .pic4{
+        width: 120px;
+        height: 120px;
+        right: 1rem;
+        bottom: -19rem;
+        border: none;
+        transform: rotate(18deg);
+    }
+    span{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    p{
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding: 10px 0;
+    }
+    .hero-target{
+        font-size: initial;
+        color: #fd5901;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px){
+    .hero-intro{
+        text-align: center;
+        bottom: -55rem;
+        padding-left: 6rem;
+    }
+    .hero-container{
+        padding: 0 4rem;
+    }
+}
